@@ -10,7 +10,7 @@ export class MyLoggerService extends ConsoleLogger {
         const formattedEntry = `${Intl.DateTimeFormat('en-US', {
             dateStyle: 'short',
             timeStyle: 'short',
-            timeZone: 'America/Chicago',
+            timeZone: 'Europe/Paris',  // You can also use 'Europe/Madrid'
         }).format(new Date())}\t${entry}\n`;
 
         try {
